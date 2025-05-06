@@ -20,4 +20,5 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn -B package --file Basic-Java-Maven-SCD/pom.xml
+        working-directory: ./Basic-Java-Maven-SCD
+        run: mvn -B package
